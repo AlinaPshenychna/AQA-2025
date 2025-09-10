@@ -1,7 +1,7 @@
 //4.1
 const radiusCircle = 3;
 const data = Math.PI * radiusCircle ** 2;
-console.log(data);
+console.log(Math.round(data));
 
 //4.2
 const length = 8;
