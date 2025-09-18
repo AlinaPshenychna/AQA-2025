@@ -1,6 +1,6 @@
-const str = "Hello";
+const string = "Hello";
 
-const num = 5;
+const number = 5;
 
 const bool = true;
 
@@ -8,8 +8,8 @@ const taskNull = null;
 
 const taskUndefined = undefined;
 
-console.log(str);
-console.log(num);
+console.log(string);
+console.log(number);
 console.log(bool);
 console.log(taskNull);
 console.log(taskUndefined);
