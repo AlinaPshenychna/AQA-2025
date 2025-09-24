@@ -1,14 +1,14 @@
-function size(width, length) {
+function calcRectangleSquare(width, length) {
   return width * length;
 }
-console.log(size(2, 3));
+console.log(calcRectangleSquare(2, 3));
 
-const rectanSquare = function (width, length) {
+const calculRectangleSquare = function (width, length) {
   return width * length;
 };
-console.log(rectanSquare(4, 5));
+console.log(calculRectangleSquare(4, 5));
 
-const rectangleSquare = (width, length) => {
+const calculationSquare = (width, length) => {
   return width * length;
 };
-console.log(rectangleSquare(5, 5));
+console.log(calculationSquare(5, 5));
