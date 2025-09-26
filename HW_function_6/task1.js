@@ -1,14 +1,14 @@
-function calcRectangleSquare(width, length) {
+function calcRectangleArea(width, length) {
   return width * length;
 }
-console.log(calcRectangleSquare(2, 3));
+console.log(calcRectangleArea(2, 3));
 
-const calculRectangleSquare = function (width, length) {
-  return width * length;
-};
-console.log(calculRectangleSquare(4, 5));
+// const calcRectangleArea = function (width, length) {
+//   return width * length;
+// };
+// console.log(calcRectangleArea(4, 5));
 
-const calculationSquare = (width, length) => {
-  return width * length;
-};
-console.log(calculationSquare(5, 5));
+// const calcRectangleArea = (width, length) => {
+//   return width * length;
+// };
+// console.log(calcRectangleArea(5, 5));
