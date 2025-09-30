@@ -1,9 +1,9 @@
-function getNumber(num) {
+function handleNumber(num) {
   console.log(num);
   if (num <= 0) {
     return;
   }
-  getNumber(num - 1);
+  handleNumber(num - 1);
 }
 
-getNumber(5);
+handleNumber(5);

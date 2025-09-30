@@ -1,4 +1,4 @@
-function devide(numerator, denominator) {
+function divide(numerator, denominator) {
   if (typeof numerator !== "number" || typeof denominator !== "number") {
     throw new Error("Not a number");
   }
@@ -9,7 +9,7 @@ function devide(numerator, denominator) {
 }
 
 try {
-  console.log(devide(4, 2));
+  console.log(divide(4, 2));
 } catch (error) {
   console.error(error.message);
 } finally {
@@ -17,7 +17,7 @@ try {
 }
 
 try {
-  console.log(devide("Hello", 2));
+  console.log(divide("Hello", 2));
 } catch (error) {
   console.error(error.message);
 } finally {
@@ -25,7 +25,7 @@ try {
 }
 
 try {
-  console.log(devide(4, 0));
+  console.log(divide(4, 0));
 } catch (error) {
   console.error(error.message);
 } finally {
