@@ -4,8 +4,7 @@ let count = "";
 for (let i=1; i<= 9; i++){
 count += number +" * "+i+" = "+(number*i)+"\n";
 }
-console.log(count)
-
+console.log(count);
 
 let k = 1;
 let countSecond ="";
