@@ -1,6 +1,6 @@
-function randomText(text, ms) {
+function printWithDelay(text, ms) {
   setTimeout(() => {
     console.log(text);
   }, ms);
 }
-randomText("Hello", 1000);
+printWithDelay("Hello", 1000);
