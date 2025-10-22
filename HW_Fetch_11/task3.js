@@ -1,20 +1,27 @@
+async function getToDo(id) {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/todos/${id}`
+  );
+  const todo = await response.json();
+  return todo;
+}
+
+async function getUser(id) {
+  const response = await fetch(
+    `https://jsonplaceholder.typicode.com/users/${id}`
+  );
+  const user = await response.json();
+  return user;
+}
+
 async function getFullData() {
   try {
-    const [toDoResponse, userResponse] = await Promise.all([
-      fetch("https://jsonplaceholder.typicode.com/todos/1"),
-      fetch("https://jsonplaceholder.typicode.com/users/1"),
-    ]);
-    const toDoResult = await toDoResponse.json();
-    const userResult = await userResponse.json();
-    console.log("To Do:", toDoResult);
-    console.log("User:", userResult);
+    const [todo, user] = await Promise.all([getToDo(1), getUser(1)]);
+    console.log("To Do task 3:", todo);
+    console.log("User task 3:", user);
 
-    const firstResponse = await Promise.race([
-      fetch("https://jsonplaceholder.typicode.com/todos/1"),
-      fetch("https://jsonplaceholder.typicode.com/users/1"),
-    ]);
-    const firstResult = await firstResponse.json();
-    console.log(firstResult);
+    const first = await Promise.race([getToDo(1), getUser(1)]);
+    console.log(first);
   } catch (error) {
     console.log(error);
   }
