@@ -1,5 +1,4 @@
-const averageGradeSwitch = 85;
-
+const averageGrade = 85;
 switch (true) {
   case averageGrade < 60:
     console.log("Незадовільно");

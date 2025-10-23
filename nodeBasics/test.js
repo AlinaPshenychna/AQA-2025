@@ -1,4 +1,4 @@
-import chalk from "chalk"
+import chalk from "chalk";
 import { passed, failed, flaky } from "./constants.js";
 import testsTitles from "./testTitles.js";
 

@@ -1,4 +1,6 @@
-class EBook extends Book {
+import { Book, book1, book2 } from "./Book.js";
+
+export class EBook extends Book {
   constructor(name, author, year, formatFile) {
     super(name, author, year);
     this._formatFile = formatFile;

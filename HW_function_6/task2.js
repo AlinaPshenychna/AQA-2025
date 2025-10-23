@@ -1,5 +1,5 @@
 function isAdult(age) {
-  return age > 17
+  return age > 17;
 }
 
 console.log(isAdult(15));

@@ -1,4 +1,4 @@
-class Book {
+export class Book {
   constructor(name, author, year) {
     this._name = name;
     this._author = author;
@@ -43,7 +43,7 @@ class Book {
   }
 }
 
-const book1 = new Book("Karlson", "Astrid", 1970);
-const book2 = new Book("Maugli", "Kipling", 1980);
+export const book1 = new Book("Karlson", "Astrid", 1970);
+export const book2 = new Book("Maugli", "Kipling", 1980);
 book1.printInfo();
 book2.printInfo();
